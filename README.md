@@ -1,16 +1,43 @@
-# React + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie app build using ReactJs and Appwrite.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This movie app is a single page application where you can view movies from external API called The Movie Database. I built this to study about ReactJS and how to show data from API.
 
-## React Compiler
+## Tech Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Language: ReactJS
+- Libraries: Tailwind CSS, PostgreSQL
+- Tools: Git, VS Code, Appwrite, Github Pages, TMBD
 
-## Expanding the ESLint configuration
+## What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- How importance to separate components.
+- How to pass data one component to another using props.
+- How useState hook works for example giving the errorMessage a default value of empty string then setting it to "Failed to fetch movies" if there is no available movie.
+- How useEffect hook like fetching data from the server for example fetching movies from the API. Another simple example is you want to display the value of how many you clicked the like button with dependency array.
+- How to implement optimize search funtion
+
+## Challenges and Solutions
+
+| Challenge | How I Solved It |
+|-----------|-----------------|
+| Search function send too many request | Optimize the performance by debouncing the input field |
+| Need to show the trending movies | Implmenent database and monitor the times movie has been search |
+
+## What I'd Improve
+
+- Reusable components
+- Display data from API
+- Deploy a project using Github Pages with Appwrite
+
+## Check the final project
+- https://iamjamescee.github.io/movie-app/
+
+## Resources
+
+- [Official documentation](https://react.dev/)
+- [The Movie Database](https://www.themoviedb.org/)
+- [Tutorial I followed](https://www.youtube.com/watch?v=dCLhUialKPQ)
